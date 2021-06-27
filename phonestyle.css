@@ -1,0 +1,128 @@
+@media only screen and (min-width: 270px) {
+    header nav a{
+        padding: 18px 4px 10.5px 4px;
+        font-size: 7px;
+    }
+
+    header img{
+        max-height: 15px;
+        margin-top: 25%;
+        margin-left: 10px;
+    }
+    header nav{   
+        margin-right: 15px;   
+    }
+
+    a.anchor{
+        top: -67px;
+    }
+    main section{
+        height: calc(100vh - 67px);
+    }
+    a.anchor{
+        top: -39px;
+    }
+    main section:nth-of-type(1){
+        height: calc(100vh - 39px);
+        margin-top: 39px;
+    }
+    main section:nth-of-type(2){
+        height: calc(100vh - 39px);
+    }
+    main section:nth-of-type(3){
+        height: calc(100vh - 39px);
+    }
+    main section:nth-of-type(4){
+        height: calc(100vh - 39px);
+    }
+    main section:nth-of-type(5){
+        height: calc(100vh - 39px);
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    header nav a{
+        padding: 13px 5px 12.5px 5px;
+        font-size: 14px;
+    }
+
+    header img{
+        max-height: 25px;
+        margin-top: 13%;
+        margin-left: 20px;
+    }
+    header nav{   
+        margin-right: 15px;   
+    }
+
+    a.anchor{
+        top: -47px;
+    }
+    main section:nth-of-type(1){
+        height: calc(100vh - 47px);
+        margin-top: 47px;
+    }
+    main section:nth-of-type(2){
+        height: calc(100vh - 47px);
+    }
+    main section:nth-of-type(3){
+        height: calc(100vh - 47px);
+    }
+    main section:nth-of-type(4){
+        height: calc(100vh - 47px);
+    }
+    main section:nth-of-type(5){
+        height: calc(100vh - 47px);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header nav a{
+        padding: 20px 15px 20px 15px;
+        font-size: 19px;
+    }
+
+    header img{
+        max-height: 40px;
+        margin-top: 12%;
+        margin-left: 30px;
+    }
+    header nav{   
+        margin-right: 20px;   
+    }
+        a.anchor{
+        top: -67px;
+    }
+    main section:nth-of-type(1){
+        height: calc(100vh - 67px);
+        margin-top: 67px;
+    }
+    main section:nth-of-type(2){
+        height: calc(100vh - 67px);
+    }
+    main section:nth-of-type(3){
+        height: calc(100vh - 67px);
+    }
+    main section:nth-of-type(4){
+        height: calc(100vh - 67px);
+    }
+    main section:nth-of-type(5){
+        height: calc(100vh - 67px);
+    }
+}
+
+@media only screen and (min-width: 1090px) {
+    header nav a{
+        padding: 20px 40px 17px 40px;
+        font-size: 24px;
+    }
+    header img{
+        max-height: 50px;
+        margin-top: 5%;
+        margin-left: 60px;
+    }
+    header nav{   
+        margin-right: 10px;   
+    }
+}
+
