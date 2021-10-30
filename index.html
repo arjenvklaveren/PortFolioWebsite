@@ -5,6 +5,14 @@
         {
             document.querySelector('#welcome').scrollIntoView({behavior: 'smooth'});
         }
+        function HamburgerMenu() {
+            var x = document.getElementById("hamburgerMenu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
     </script>
     <head>
         <meta charset="UTF-8">
@@ -18,12 +26,20 @@
             <nav>
                 <h1 onclick="ScrollToHome()"><img src ="images/Logo.png"></h1>
                 <li>
-                    <ul><a href="#aboutMe">About Me</a></ul>
-                    <ul><a href="#projects">Projects</a></ul>
+                    <ul><a href="#aboutMe">About</a></ul>
+                    <ul><a href="#projectss">Projects</a></ul>
                     <ul><a href="#contact">Contact</a></ul>
                 </li>
-            </nav>
-        </header>       
+                <h1 onclick="HamburgerMenu()"><img src ="images/hamburger.png"></h1>
+            </nav>         
+        </header>   
+        <div id="hamburgerMenu">
+            <li>
+                <ul><a href="#aboutMe">About</a></ul>
+                <ul><a href="#projectss">Projects</a></ul>
+                <ul><a href="#contact">Contact</a></ul>
+            </li>
+        </div>    
         <main>
             <section>
                 <a class="anchor" id="welcome"></a>
@@ -37,36 +53,32 @@
                 <a class="anchor" id="aboutMe"></a>
                 <article>
                     <p style="border:none; justify-content: center; font-size: 5vh; font-weight: bold;">About me</p>
-                    <p>As mentioned before, I am Arjen. Currently I am studying as a CMGT student at Saxion University Enschede. The thing in life I most enjoy doing is impressing people. I love that feeling. Before I started this education, I sought that feeling in playing soccer, which I succeeded multiple times in. But as of right now, I want to impress people with my creativity and imagination. </p><br>
-                    <p>I see myself of quite an outgoing and social person, atleast that is when I manage to break the ice that is. Which in alot of cases is quite hard. I struggle with that sometimes, but when I manage to get out of my comfort zone, I really shine.</p><br>
-                    <p>To be able to impress people with your creativity, you need a method of creating. I was never good at drawing, so I chose woodworking, which I loved doing. However, I found out later that I didnt like how it gets implemented into a job. I would rather do it as a hobby.</p><br>
-                    <p>So I chose to become a software developer.</p><br>
-                    <p>As of right now, I am not quite sure which direction I want to go to. I could create games. I could create websites. I could create visualisation using code. I could do alot.</p><br>
-                    <p>This website will show you my current progress in my way of impressing people, I hope you enjoy.</p>
+                    <p>As mentioned before, I am Arjen. Currently I am studying as a CMGT student at Saxion University Enschede. The thing in life I most enjoy doing is impressing people. I love that feeling. Before I started this education, I sought that feeling in playing soccer, which I succeeded multiple times in. But as of right now, I want to impress people with my creativity and imagination.<img src="images/ArjenMe.jpg"><br><br>
+                    To be able to impress people with your creativity, you need a method of creating. I was never good at drawing, so I chose woodworking, which I loved doing. However, I found out later that I didnt like how it gets implemented into a job. I would rather do it as a hobby.<br><br>
+                    So I chose to become a software developer.<br><br>
+                    As of right now, I am not quite sure which direction I want to go to. I could create games. I could create websites. I could create visualisations using code. I could do alot.<br><br>
+                    This website will show you my current progress in my way of impressing people.</p>
                 </article>
-                <a href="#projects">▼</a>
+                <a href="#projectss">▼</a>
             </section>
             <section>
-                <a class="anchor" id="projects"></a>    
+                <a class="anchor" id="projectss"></a>    
                 <p style="border:none;font-size: 5vh; margin-top: 4vh; text-align: center; font-weight: bold;">Projects</p> 
                 <article>                       
-                    <article>
-                        <iframe src="https://www.youtube.com/embed/h--rhX76e0Y"></iframe>
+                    <article>         
                         <div>
                             <h1>Robotic Gladiator</h1>
                             <p>Project for the 4th term subject "Unity game scripting". I made this entire project on my own. The goal is to survive an unlimited amount of robots trying to kill you in a gladiator setting. I made this game in Unity using C# and made every model myself. The main gameplay element is fast paced "parkour" in which you have to hit the weak point (the antenna) of the robots. Dont get hit by the chainsaws though! It will hurt.</p>
-                        </div>
+                            <iframe src="https://www.youtube.com/embed/-_mjgWDhgbo"></iframe>
+                        </div>                   
                     </article>  
-                    <hr>
-                    <article>
-                        <iframe src="https://www.youtube.com/embed/OYjORycjiOE"></iframe>
+                    <article>                       
                         <div>
                             <h1>MBO Projects</h1>
                             <p>This is a collection of my main projects of my MBO education. This is a combination of multiple project for my first education at Aventus Apeldoorn. All of the games are made in Unity. Most of the assets are not made by myself, expect for the pixel art one(the character). The code is all written by me in C#</p>
-                        </div>
+                            <iframe src="https://www.youtube.com/embed/OYjORycjiOE"></iframe>
+                        </div>               
                     </article> 
-                    <hr>
-                    <p>more coming soon</p>
                 </article>  
                 
                 <a href="#contact">▼</a>

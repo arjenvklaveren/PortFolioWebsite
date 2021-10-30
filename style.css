@@ -8,21 +8,56 @@
 
 html{
     scroll-behavior: smooth;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+body { 
+    height: 100%; 
 }
 
 header{
     background-color: whitesmoke;
-    border-bottom: solid 3px;
+    border-bottom: solid 5px;
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 999;
+    z-index: 100;
 }
+
+#hamburgerMenu{
+    display: none;
+    list-style-type: none;
+    position: fixed;
+    background-color: whitesmoke;
+    text-decoration: none;
+    font-size: 30px;
+    right: 0;
+    margin-top: 5px;
+    margin-right: -2px;
+    width: 165px;
+    height: auto;
+    color: black;
+    z-index: 200;
+}
+#hamburgerMenu ul{
+    padding: auto;
+    margin: 15%;
+    
+}
+
+#hamburgerMenu a{
+    text-decoration: none;
+    color: black;
+}
+
 
 header h1:hover
 {
     cursor: pointer;
+}
+
+header h1:nth-of-type(2){
+    display: none;
 }
 
 header nav{
@@ -107,18 +142,28 @@ main section:nth-of-type(1) a{
 /*About me page*/
 
 main section:nth-of-type(2){
-    background-image: url(images/backgroundImageAboutMe.png);
+    background-image: url(images/emptyBackGroundMirrored.png);
     background-size: 100% 100%;
     height: calc(100vh - 67px);
     color: white;  
     position: relative;
+    font-size: 2.3vh;
 }
 
 main section:nth-of-type(2) article{
-    width: 55%;
-    margin-left: 2vw;
+    width: 50%;
+    margin-left: 10vw;
     padding-top: 4vh;
-    font-size: 1.1vw;
+    float: left;
+}
+
+main section:nth-of-type(2) article img{
+    float: right;
+    position: absolute;
+    right: 0;
+    margin-right: 10vw;
+    width: 25%;
+    top: 0;
 }
 
 main section:nth-of-type(2) a{
@@ -145,6 +190,7 @@ main section:nth-of-type(3){
     padding-left: 2vw;
     flex-direction: column;
     color: white;
+    font-size: 2.3vh;
 }
 
 main section:nth-of-type(3) article
@@ -158,26 +204,34 @@ main section:nth-of-type(3) article
 
 main section:nth-of-type(3) article article
 {
-    height: 96%;
+    height: 100%;
     width: 98%;
     margin-right: 2%;
     border: none;
     overflow: hidden;
+    border-bottom: solid 2px white;
 }
 
 main section:nth-of-type(3) article article iframe
 {
-    height: 92%;
-    width: 48%;
+    height: 80%;
+    width: 60%;
     border: none;
-    float: left;
+    float: none; 
+    margin: 0 auto;
+    display:block;
 }
 
 main section:nth-of-type(3) article article div
 {
-    float: right;
-    width: 48%;
+    margin: auto;
+    width: 80%;
     height: 100%;
+}
+
+main section:nth-of-type(3) article article div p
+{
+    margin-bottom: 1vh;
 }
 
 
@@ -211,6 +265,7 @@ main section:nth-of-type(4){
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+    font-size: 2.3vh;
 }
 
 
@@ -228,7 +283,6 @@ main section:nth-of-type(4) p{
     border: 4px solid white;
     border-radius: 10px;
     height: 6vh;
-    width: 45vh;
 }
 
 
