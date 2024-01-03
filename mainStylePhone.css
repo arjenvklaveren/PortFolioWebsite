@@ -1,0 +1,161 @@
+@media only screen and (min-width: 270px) {
+    .contentTopBar {
+        height: 10%;
+    }
+    .contentTopBarMiddle {
+        width: 50px;
+    }
+    .contentBottomBar {
+        height: 3.5%;
+    }
+    .contentWrapper {
+        /* width: 87.5%; */
+        height: 86.5%;
+    }
+    .contentBottomButton {
+        width: 75px;
+    }
+    .contentTopBarMainCentre {
+        width: 80%;
+        margin-top: 10%;
+    }
+
+    #headerNavBarMainCentre {
+        margin-top: 10%;
+    }
+
+    .topNavLogo {
+        margin-left: auto;
+        margin-right: auto;
+        height: 50%;
+    }
+    .topNavText {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.2rem;
+    }
+
+    .planetVisual {
+        width: 260px;
+        transform: translate(-50%, 21%);
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .contentTopBar {
+        height: 10%;
+    }
+    .contentTopBarMiddle {
+        width: 60px;
+    }
+    .contentBottomBar {
+        height: 4%;
+    }
+    .contentWrapper {
+        /* width: 90%; */
+        height: 86%;
+    }
+    .contentBottomButton {
+        width: 100px;
+    }
+    .contentTopBarMainCentre {
+        width: 70%;
+        margin-top: 8%;
+    }
+
+    #headerNavBarMainCentre {
+        margin-top: 8%;
+    }
+
+    .topNavLogo {
+        margin-left: 5%;
+        height: 75%;
+    }
+    .topNavText {
+        margin-right: 5%;
+        font-size: 1.75rem;
+    }
+
+    .planetVisual {
+        width: 290px;
+        transform: translate(-50%, 19%);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .contentTopBar {
+        height: 10%;
+    }
+    .contentTopBarMiddle {
+        width: 70px;
+    }
+    .contentBottomBar {
+        height: 4.5%;
+    }
+    .contentWrapper {
+        /* width: 92.5%; */
+        height: 85.5%;
+    }
+    .contentBottomButton {
+        width: 125px;
+    }
+    .contentTopBarMainCentre {
+        width: 60%;
+        margin-top: 6%;
+    }
+
+    #headerNavBarMainCentre {
+        margin-top: 6%;
+    }
+
+    .topNavLogo {
+        margin-left: 5%;
+    }
+    .topNavText {
+        margin-right: 5%;
+    }
+    
+    .planetVisual {
+        width: 320px;
+        transform: translate(-50%, 17%);
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .contentTopBar {
+        height: 10%;
+    }
+    .contentTopBarMiddle {
+        width: 80px;
+    }
+    .contentBottomBar {
+        height: 5%;
+    }
+    .contentWrapper {
+        /* width: 95%; */
+        height: 85%;
+    }
+    .contentBottomButton {
+        width: 150px;
+    }
+    .contentTopBarMainCentre {
+        width: 60%;
+        margin-top: 4%;
+    }
+
+    #headerNavBarMainCentre {
+        margin-top: 4%;
+    }
+
+    .topNavLogo {
+        margin-left: 5%;
+    }
+    .topNavText {
+        margin-right: 5%;
+    }
+
+    .planetVisual {
+        width: 350px;
+        transform: translate(-50%, 15%);
+    }
+}

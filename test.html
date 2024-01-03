@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+  </style>
+</head>
+<body>
+
+<p class="typewriter"></p>
+<p class="typewriter"></p>
+<p class="typewriter"></p>
+<p class="typewriter"></p>
+
+<script>
+  const texts = [
+    "Hello, my name is Arjen",
+    "An aspiring software engineer",
+    "Embark on a journey with me",
+    "Click the rocket"
+  ];
+
+  let paragraphIndex = 0;
+  let charIndex = 0;
+
+  function type() {
+    const element = document.getElementsByClassName('typewriter')[paragraphIndex];
+    const currentText = texts[paragraphIndex]; 
+    element.innerHTML = currentText.slice(0, charIndex);
+
+    charIndex++;
+
+    if (charIndex <= currentText.length) {
+      setTimeout(type, 50);
+    } else {
+      paragraphIndex++;
+      charIndex = 0;
+
+      if (paragraphIndex < texts.length) {
+        setTimeout(type, 1000);
+      }
+    }
+  }
+  type();
+</script>
+
+</body>
+</html>

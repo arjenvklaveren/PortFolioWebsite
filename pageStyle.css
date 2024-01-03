@@ -1,0 +1,236 @@
+/* Home page */
+#homeMainDiv {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+}
+#homeTitleDiv {
+    width: 100%;
+    height: 35%;
+}
+#homeTitleText {
+    margin: 0;
+    font-size: 5.5rem;
+    text-decoration: underline;
+}
+#homeInfoText1 {
+    margin: 0;
+    margin-top: 1%;
+    font-style: italic;
+}
+#homeInfoText2 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 0 0 16px rgb(255, 193, 7);
+}
+#homeExtraInfoText {
+    margin: 0;
+    font-size: 1rem;
+    text-decoration: bold;
+}
+#homeSubInfo {
+    width: 100%;
+    font-size: 1.5rem;
+    /* height: 40%; */
+}
+#homeExtraInfo {
+    width: 100%;
+    height: 15%;
+}
+#homePlanetVisual {
+    box-shadow: 0px 0px 6vw 6vw rgb(255, 255, 0), 0px 0px 12vw 12vw rgb(255, 193, 7);
+    background-color: rgb(255, 255, 0);
+}
+.homeTopBarSideItem {
+    background: linear-gradient(to top, rgb(255, 193, 7), rgba(33, 37, 41, 0.75) 10px);
+}
+
+
+/* About page */
+#aboutMainDiv {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+}
+#aboutLeftInfoDiv {
+    padding-left: 5%;
+}
+#aboutLeftInfoDiv p {
+    font-size: 1rem;
+}
+#aboutRightInfoDiv {
+
+}
+#aboutPicture {
+    width: 75%;
+    max-height: 100%;
+    border: solid 4px rgb(220, 53, 69);
+}
+#aboutPlanetVisual {
+    box-shadow: 0px 0px 6vw 6vw rgb(255, 0, 0), 0px 0px 12vw 12vw rgb(220, 53, 69);
+    background-color: rgb(255, 0, 0)
+}
+.aboutTopBarSideItem {
+    background: linear-gradient(to top, rgb(220, 53, 69), rgba(33, 37, 41, 0.75) 10px);
+}
+
+
+/* Contact page */
+#contactMainDiv {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+}
+.contactLinkDiv {
+    width: 75%;
+    height: 7.5vh;
+    border: solid 4px rgb(13, 110, 253);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    padding-left: 3.5%;
+}
+.contactLinkImg {
+    height: 75%;
+    margin-right: 2.5%;
+}
+.contactLinkText {
+    display: inline-block;
+    margin: 0;
+}
+#contactLeftDiv {
+    height: 100%;
+}
+#contactRightDiv {
+    height: 100%;
+}
+#contactFormDiv {
+    width: 100%;
+    height: 100%;
+}
+#contactNameInput {
+    width: 50%;
+    float: left;
+}
+#contactEmailInput {
+    width: 50%;
+    float: right;
+}
+#contactMessageInput {
+    height: 350px;
+}
+#contactButtonInput {
+    background-color: rgb(13, 110, 253) !important;
+}
+#contactPlanetVisual {
+    box-shadow: 0px 0px 6vw 6vw rgb(0, 0, 255), 0px 0px 12vw 12vw rgb(13, 110, 253);
+    background-color: rgb(0, 0, 255);
+}
+.contactTopBarSideItem {
+    background: linear-gradient(to top, rgb(13, 110, 253), rgba(33, 37, 41, 0.75) 10px);
+}
+
+
+/* Projects page */
+#projectsMainDiv {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+}
+#projectsNavDiv {
+    height: 10%;
+    font-size: 1.75rem;
+}
+.cardPageArrow:hover{
+    cursor: pointer;
+}
+.projectCard {
+    width: 50vh;
+    height: 35vh;
+    color: black;
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+    margin-bottom: 1% !important;
+    border: solid 4px rgb(25, 135, 84);
+}
+.projectCard:hover {
+    cursor: pointer;
+}
+.projectCardFooter {
+    width: 100%;
+    height: 20%;
+    color: #f8f9fa;
+    border-top: 0px;
+}
+.projectCardVisual {
+    width: 100%;
+    height: 80%;
+    background-image: url(Images/cardPlaceholder.jpg);
+    background-size: cover;
+}
+.projectCardContent {
+    display: none !important;
+}
+.projectCardContent:hover {
+    cursor: context-menu;
+}
+.projectCardContentHeader {
+    height: 10%;
+}
+.projectCardContentHeaderText {
+    width: 80%;
+    margin: 0;
+    font-size: 2rem;
+}
+.projectCardContentMain {
+    height: 90%;
+    max-height: 90%;
+}
+.projectCardContentLeft {
+    overflow-y: scroll;
+    max-height: 100%;
+    background-color: rgba(33, 37, 41, 1);
+    padding-left: 2% !important;
+    border-right: solid 2px rgb(25, 135, 84);
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.projectCardContentLeft::-webkit-scrollbar {
+    display: none;
+}
+.projectCardContentRight {
+    overflow-y: scroll;
+    max-height: 100%;
+    background-color: rgba(33, 37, 41, 1);
+    border-left: solid 2px rgb(25, 135, 84);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.projectCardContentRight::-webkit-scrollbar {
+    display: none;
+}
+.projectCardContentMedia {
+    margin-top: 2%;
+    width: 60%;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    display: block;
+}
+.contentCardBackButton {
+    color: white;
+}
+.contentCardBackButton:hover {
+    cursor: pointer;
+}
+#projectsPlanetVisual {
+    box-shadow: 0px 0px 6vw 6vw rgb(14, 164, 94), 0px 0px 12vw 12vw rgb(25, 135, 84);
+    background-color: rgb(14, 164, 94);
+}
+.projectsTopBarSideItem {
+    background: linear-gradient(to top, rgb(25, 135, 84), rgba(33, 37, 41, 0.75) 10px);
+}

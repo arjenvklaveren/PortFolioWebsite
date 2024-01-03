@@ -1,0 +1,219 @@
+@media only screen and (min-width: 270px) {
+    #homeTitleText {
+        font-size: 3.5rem;
+    }
+    #homeTitleDiv {
+        height: 45%;
+    }
+    #homeSubInfo {
+        font-size: 1.1rem;
+    }
+
+    #aboutLeftInfoDiv p {
+        font-size: 0.7rem;
+    }
+    #aboutPicture {
+        width: 35%;
+    }
+
+    .projectCard {
+        width: 34vh;
+        height: 21vh;
+    }
+    .projectCardContentLeft {
+        max-height: 50%;
+    }
+    .projectCardContentRight {
+        max-height: 50%;
+        border-top: 4px solid rgb(25, 135, 84);
+    }
+    .projectCardContentHeaderText {
+        width: 50%;
+        font-size: 1rem;
+    }
+
+    .contactLinkDiv {
+        width: 80%;
+        height: 5.5vh;
+        padding-left: 0;
+        font-size: 0.7rem;
+        justify-content: center;
+    }
+    #contactLeftDiv {
+        height: 60%;
+    }
+    #contactRightDiv {
+        height: 40%;
+    }
+    #contactMessageInput {
+        height: 75px;
+    }
+    #contactFormDiv {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    #homeTitleText {
+        font-size: 4.5rem;
+    }
+    #homeTitleDiv {
+        height: 45%;
+    }
+    #homeSubInfo {
+        font-size: 1.3rem;
+    }
+
+    #aboutLeftInfoDiv p {
+        font-size: 0.8rem;
+    }
+    #aboutPicture {
+        width: 160px;
+    }
+
+    .projectCard {
+        width: 42vh;
+        height: 27vh;
+    }
+    .projectCardContentLeft {
+        max-height: 50%;
+    }
+    .projectCardContentRight {
+        max-height: 50%;
+        border-top: 4px solid rgb(25, 135, 84);
+    }
+    .projectCardContentHeaderText {
+        width: 60%;
+        font-size: 1.25rem;
+    }
+
+    .contactLinkDiv {
+        width: 60%;
+        height: 6.5vh;
+        padding-left: 0;
+        font-size: 0.8rem;
+        justify-content: center;
+    }
+    #contactLeftDiv {
+        height: 60%;
+    }
+    #contactRightDiv {
+        height: 40%;
+    }
+    #contactMessageInput {
+        height: 75px;
+    }
+    #contactFormDiv {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #homeTitleText {
+        font-size: 5rem;
+    }
+    #homeTitleDiv {
+        height: 40%;
+    }
+    #homeSubInfo {
+        font-size: 1.4rem;
+    }
+
+    #aboutLeftInfoDiv p {
+        font-size: 0.9rem;
+    }
+    #aboutPicture {
+        width: 75%;
+    }
+
+    .projectCard {
+        width: 46vh;
+        height: 31vh;
+    }
+    .projectCardContentLeft {
+        max-height: 100%;
+    }
+    .projectCardContentRight {
+        max-height: 100%;
+        border-top: 0px solid rgb(25, 135, 84);
+    }
+    .projectCardContentHeaderText {
+        width: 70%;
+        font-size: 1.5rem;
+    }
+
+    .contactLinkDiv {
+        width: 75%;
+        height: 7.5vh;
+        padding-left: 4.5%;
+        font-size: 0.8rem;
+        justify-content: start;
+    }
+    #contactLeftDiv {
+        height: 100%;
+    }
+    #contactRightDiv {
+        height: 100%;
+    }
+    #contactMessageInput {
+        height: 350px;
+    }
+    #contactFormDiv {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    #homeTitleText {
+        font-size: 5.5rem;
+    }
+    #homeTitleDiv {
+        height: 35%;
+    }
+    #homeSubInfo {
+        font-size: 1.5rem;
+    }
+
+    #aboutLeftInfoDiv p {
+        font-size: 1rem;
+    }
+    #aboutPicture {
+        width: 75%;
+    }
+
+    .projectCard {
+        width: 50vh;
+        height: 35vh;
+    }
+    .projectCardContentLeft {
+        max-height: 100%;
+    }
+    .projectCardContentRight {
+        max-height: 100%;
+        border-top: 0px solid rgb(25, 135, 84);
+    }
+    .projectCardContentHeaderText {
+        width: 80%;
+        font-size: 2rem;
+    }
+
+    .contactLinkDiv {
+        width: 75%;
+        height: 7.5vh;
+        padding-left: 3.5%;
+        font-size: 1.1rem;
+        justify-content: start;
+    }
+    #contactLeftDiv {
+        height: 100%;
+    }
+    #contactRightDiv {
+        height: 100%;
+    }
+    #contactMessageInput {
+        height: 350px;
+    }
+    #contactFormDiv {
+        width: 100%;
+    }
+}

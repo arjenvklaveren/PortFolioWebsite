@@ -1,0 +1,377 @@
+/* Variables */
+:root {
+  --border-angle: 5%;
+  --border-size: 5px;
+}
+
+/* Fonts */
+@font-face {
+  font-family: mainFont;
+  src: url(Fonts/zekton.otf);
+}
+
+html {
+  scroll-behavior: auto !important;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: black;
+}
+
+body {
+  overflow-y: hidden;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: black;
+  font-family: mainFont;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#containerMain {
+  height: 100%;
+}
+#rowMain {
+  height: 100%;
+}
+
+#mainContent {
+  height: 100%;
+}
+.contentPage {
+  display: flex;
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+.contentPageWrapper {
+  height: 100%;
+  z-index: 2;
+}
+
+/* Content wrapper */
+.contentWrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  height: 85%;
+  z-index: 2;
+  clip-path: polygon(var(--border-angle) 0%, calc(100% - var(--border-angle)) 0%, 100% var(--border-angle), 100% calc(100% - var(--border-angle)),
+      calc(100% - var(--border-angle)) 100%, var(--border-angle) 100%, 0% calc(100% - var(--border-angle)), 0% var(--border-angle));
+  opacity: 0.95;
+  padding: var(--border-size);
+}
+.contentMainDiv {
+  background-color: rgba(33, 37, 41, 1);
+  clip-path: polygon(var(--border-angle) 0%, calc(100% - var(--border-angle)) 0%, 100% var(--border-angle), 100% calc(100% - var(--border-angle)),
+      calc(100% - var(--border-angle)) 100%, var(--border-angle) 100%, 0% calc(100% - var(--border-angle)), 0% var(--border-angle));
+}
+.transitionBlock {
+  background-color: black;
+}
+
+
+/* Navigation bar */
+#sideNavBar {
+  width: 35px;
+  z-index: 2;
+  outline: none;
+}
+#sideNavBarDiv {
+  background-color: rgba(33, 37, 41, 0.75);
+}
+.navItem {
+  text-decoration: none;
+}
+.navItem:hover {
+  background-color: rgba(58, 63, 67, 0.75) !important;
+  cursor: pointer;
+}
+.navItemPlanet {
+  width: 125%;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+}
+#navPlanetLine {
+  position: absolute;
+  background: linear-gradient(to bottom, rgb(13, 110, 253), rgb(25, 135, 84), rgb(220, 53, 69), rgb(255, 193, 7));
+  height: 75%;
+  width: 2px !important;
+  transform: translate(-1px, 0px);
+  display: block;
+  padding: 0;
+  margin: 0;
+  left: 50%;
+  right: 50%;
+  top: 12.5%;
+}
+.navPlanetSubLine {
+  position: absolute;
+  height: 2px;
+  width: 15px;
+  transform: translate(-7.5px, 0px);
+  padding: 0;
+  margin: 0;
+  left: 50%;
+  right: 50%;
+}
+#navPlanetTopLine {
+  position: absolute;
+  background-color: rgb(13, 110, 253);
+  height: calc(16.65% - 5px);
+  width: 2px !important;
+  transform: translate(-1px, 0px);
+  display: block;
+  padding: 0;
+  margin: 0;
+  left: 50%;
+  right: 50%;
+  top: calc(-16.65% + 5px);
+}
+#navPlanetTopSubLine {
+  position: absolute;
+  height: 3px;
+  width: 25px;
+  transform: translate(-12.5px, 0px);
+  background-color: rgb(13, 110, 253);
+  padding: 0;
+  margin: 0;
+  left: 50%;
+  right: 50%;
+  top: calc(-16.65% + 5px);
+}
+#navPlanetBottomLine {
+  position: absolute;
+  background-color: rgb(255, 193, 7);
+  height: calc(16.65% - 5px);
+  width: 2px !important;
+  transform: translate(-1px, 0px);
+  display: block;
+  padding: 0;
+  margin: 0;
+  left: 50%;
+  right: 50%;
+  bottom: calc(-16.65% + 5px);
+}
+#navPlanetBottomSubLine {
+  position: absolute;
+  height: 3px;
+  width: 25px;
+  transform: translate(-12.5px, 0px);
+  background-color: rgb(255, 193, 7);
+  padding: 0;
+  margin: 0;
+  left: 50%;
+  right: 50%;
+  bottom: calc(-16.65% + 5px);
+}
+
+/* Content top bar pages */
+.contentTopBar {
+  height: 10%;
+  z-index: 2;
+}
+.contentTopBarLeft {
+  height: 75%;
+  width: 100%;
+  padding: 0;
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+.contentTopBarRight {
+  height: 75%;
+  width: 100%;
+  padding: 0;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10% 100%);
+}
+.contentTopBarMiddle {
+  width: 80px;
+  height: 100%;
+}
+.contentTopBarMainCentre {
+  width: 80%;
+  height: 90%;
+  margin-top: 4%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.topNavLogo {
+  height: 75%;
+  margin-left: 5%;
+}
+.topNavText {
+  margin-right: 5%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 1.75rem;
+}
+.topBarPulse {
+  /* background-color: rgba(58, 63, 67, 1.0); */
+  /* animation: rocketPulseHome 3s infinite; */
+}
+
+
+/* Content bottom bar */
+.contentBottomBar {
+  height: 5%;
+  z-index: 2;
+}
+.contentBottomButton {
+  width: 150px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 5rem;
+  transform: translate(0px, -5px);
+  color: white;
+}
+.contentBottomButton:hover {
+  cursor: pointer;
+}
+
+
+/* Rockets */
+#navRocket {
+  width: 18px;
+  height: 36px;
+  position: absolute;
+  background-image: url(Images/rocket2flat.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+  top: 87.5%;
+  left: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  z-index: 4;
+}
+#contentRocket {
+  width: 30px;
+  height: 60px;
+  background-image: url(Images/rocket2flat.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 3;
+  filter: drop-shadow(0px 0px 10px white);
+  animation: rocketClickAble 4s infinite;
+}
+#contentRocket:hover {
+  cursor: pointer;
+}
+
+
+/*Header nav bar fixed */
+#headerNavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10%;
+  z-index: 2;
+}
+#headerNavBarLeft {
+  height: 75%;
+}
+#headerNavBarRight {
+  height: 75%;
+}
+#headerNavBarMiddle {
+  width: 80px;
+  height: 100%;
+}
+#headerNavBarMainCentre {
+  width: 80%;
+  height: 90%;
+  margin-top: 8%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Visuals */
+.pageBackground {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  /* display: none; */
+}
+.planetVisual {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 15%);
+  width: 350px;
+  border-radius: 50%;
+}
+#parralaxBackground {
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+
+/* Animations */
+@keyframes rocketOut {
+  0% {
+    top: 0.5%;
+  }
+  30% {
+    top: -20%;
+  }
+  95% {
+    top: 45%;
+  }
+  100% {
+    top: 45%;
+  }
+}
+@keyframes rocketIn {
+  0% {
+    top: 45%;
+  }
+  50% {
+    top: -5%;
+  }
+  100% {
+    top: 0.5%;
+  }
+}
+
+@keyframes rocketClickAble {
+  0% {
+    filter: grayscale(0%) drop-shadow(0px 0px 10px white);
+  }
+  25% {
+    filter: grayscale(100%) drop-shadow(0px 0px 10px black);
+  }
+  50% {
+    filter: grayscale(0%) drop-shadow(0px 0px 10px white);
+  }
+  75% {
+    filter: grayscale(100%) drop-shadow(0px 0px 10px black);
+  }
+  100% {
+    filter: grayscale(0%) drop-shadow(0px 0px 10px white);
+  }
+}
+
+@keyframes blinkCaret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
