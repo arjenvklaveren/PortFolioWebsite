@@ -10,6 +10,11 @@
   src: url(Fonts/zekton.otf);
 }
 
+.bi-chevron-compact-down{
+  pointer-events: none;
+  width: 10px;
+}
+
 html {
   scroll-behavior: auto !important;
   padding: 0;
@@ -25,6 +30,7 @@ body {
   height: 100%;
   background-color: black;
   font-family: mainFont;
+  touch-action:none;
 }
 
 body::-webkit-scrollbar {

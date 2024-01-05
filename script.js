@@ -55,7 +55,7 @@ function setHeightValues()
 
 function scrollToBottom()
 {
-    window.scrollTo(0, 999999);
+    $("html, body").animate({ scrollTop: $(document).height() }, 10);
 }
 
 function generateTransitionBlocks()
@@ -336,7 +336,7 @@ function update()
     setContentRocket();
     setProjectCards();
     setContentPageHeight();
-    blockLandscape();
+    // blockLandscape();
 }
 
 class ParralaxBackground

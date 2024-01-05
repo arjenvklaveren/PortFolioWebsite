@@ -50,37 +50,37 @@
                                     <div id="contactLeftDiv" class="col-md-5 row flex-column nopadding">
                                         <div class="col-12 flex-fill d-flex align-items-center justify-content-center nopadding">
                                             <a class="contactLinkDiv" href="https://www.linkedin.com/in/arjen-van-klaveren-034326164/" target="_blank" rel="noopener noreferrer">
-                                                <img src="Images/Icons/linkedinIcon.png" class="contactLinkImg"></img>
+                                                <img loading="lazy" src="Images/Icons/linkedinIcon.png" class="contactLinkImg"></img>
                                                 <p class="contactLinkText">@Arjen van Klaveren</p>
                                             </a>
                                         </div>
                                         <div class="col-12 flex-fill d-flex align-items-center justify-content-center nopadding">
                                             <a class="contactLinkDiv" href="https://github.com/arjenvklaveren" target="_blank" rel="noopener noreferrer">
-                                                <img src="Images/Icons/githubIcon.png" class="contactLinkImg"></img>
+                                                <img loading="lazy" src="Images/Icons/githubIcon.png" class="contactLinkImg"></img>
                                                 <p class="contactLinkText">@arjenvklaveren</p>
                                             </a>
                                         </div>
                                         <div class="col-12 flex-fill d-flex align-items-center justify-content-center nopadding">
                                             <a class="contactLinkDiv" href="https://www.youtube.com/channel/UCs1ywH3hIuZsxEWfXDNAYfg" target="_blank" rel="noopener noreferrer">
-                                                <img src="Images/Icons/youtubeIcon.png" class="contactLinkImg"></img>
+                                                <img loading="lazy" src="Images/Icons/youtubeIcon.png" class="contactLinkImg"></img>
                                                 <p class="contactLinkText">@Arjen van Klaveren</p>
                                             </a>
                                         </div>
                                         <div class="col-12 flex-fill d-flex align-items-center justify-content-center nopadding">
                                             <a class="contactLinkDiv" href="https://www.instagram.com/arjenvklaverenprojects" target="_blank" rel="noopener noreferrer">
-                                                <img src="Images/Icons/instagramIcon.png" class="contactLinkImg"></img>
+                                                <img loading="lazy" src="Images/Icons/instagramIcon.png" class="contactLinkImg"></img>
                                                 <p class="contactLinkText">@arjenvklaverenprojects</p>
                                             </a>
                                         </div>
                                         <div class="col-12 flex-fill d-flex align-items-center justify-content-center nopadding">
                                             <a class="contactLinkDiv" href="https://twitter.com/arjenvklaveren" target="_blank" rel="noopener noreferrer">
-                                                <img src="Images/Icons/twitterIcon.png" class="contactLinkImg"></img>
+                                                <img loading="lazy" src="Images/Icons/twitterIcon.png" class="contactLinkImg"></img>
                                                 <p class="contactLinkText">@arjenvklaveren</p>
                                             </a>
                                         </div>
                                         <div class="col-12 flex-fill d-flex align-items-center justify-content-center nopadding">
                                             <a class="contactLinkDiv" href="mailto:arjenvklaveren@gmail.com" target="_blank" rel="noopener noreferrer">
-                                                <img src="Images/Icons/gmailIcon.png" class="contactLinkImg"></img>
+                                                <img loading="lazy" src="Images/Icons/gmailIcon.png" class="contactLinkImg"></img>
                                                 <p class="contactLinkText">@arjenvklaveren@gmail.com</p>
                                             </a>
                                         </div>
@@ -144,9 +144,9 @@
 
                                         <!-- Project cards -->
                                         <div class="col-6 nopadding projectCard">
-                                            <img src="Images/Cards/spacesim1.png" class="projectCardVisual" onclick="onClickProjectCard(1)"></img>
+                                            <img src="Images/Cards/spacesim1.png" loading="lazy" class="projectCardVisual" onclick="onClickProjectCard(1)"></img>
                                             <div class="d-flex align-items-center justify-content-center text-center projectCardFooter" onclick="onClickProjectCard(1)">
-                                                <h4 style="margin: 0;">Space simulator tool</h4>
+                                                <h4 class="h4" style="margin: 0;">Space simulator tool</h4>
                                             </div>
                                             <div class="row nopadding d-flex container-fluid projectCardContent">
                                                 <div class="col-12 row nopadding bg-dark d-flex projectCardContentHeader">
@@ -158,20 +158,34 @@
                                                     <div class="col-md-6 text-light projectCardContentLeft">
                                                         <h2 class="">What is this?</h2>
                                                         <p class="">
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                                                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                            During the third year of my education we had to conduct a minor about a complex subject. My chosen subject was space physics simulation. I had always wanted to create something big related to space, but failed to do so in the past. The final product incorporated the most important aspects of space physics, but has turned out to become a Unity tool, with custom rendering techniques to support the scale of the project. 
+                                                            <br><br>
+                                                            The project is entirely made using the Unity game engine. Newtons laws of physics and universal gravitation are used to simulate a planet orbiting environment. Using those same principles, Saturn rings are also included, and was the biggest engineering challenge so far due to the high amount of calculations/rendering needed. Accurate simulation being my main priority, I couldn’t cut down and use fake ring orbits. 
+                                                            <br><br>
+                                                            After some iterations and a lot of research and trial and error, I concluded that compute shaders were detrimental for good performance. Instead of rendering using models, I instead calculate positions on the GPU and project those positions onto a 2D image overlapped onto the camera. A custom occlusion culling method utilizing the Unity depth texture allows for a realistic visual experience. On my system, a simulation with 10 million particles can be run with a consistent 60 frames per second. 
+                                                            <br><br>
+                                                            After implementing a planet position calculation algorithm I noticed that my combined features so far could not be defined as a finished product, which it had to be. That is why I encapsulated all the features into a Unity editor asset, and created a tool out of it. With an easy to use user interface, and access to most of the variable settings, creating your own solar and ring systems is extremely easy to do.
+                                                            <br><br>
+                                                            This project has taught me a lot about how to create solutions to unexpected, large scale problems. While most rendering techniques were already quite known to me, implementing it in a custom environment with an actual use case, was proven to be quite a challenge. In the end, this project allowed me to pass my minor, and even further increased my passion for space and its complexity.
                                                         </p>
                                                     </div>
                                                     <div class="col-md-6 projectCardContentRight">
-                                                        <img class="projectCardContentMedia" src="Images/Cards/spacesim1.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/spacesim1.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/Internal/spacesimgif1.gif">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/Internal/spacesimgif2.gif">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/Internal/spacesim1.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/Internal/spacesim2.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/Internal/spacesim3.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/Internal/spacesim4.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/Internal/spacesim5.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/Internal/spacesim6.png">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>   
 
                                         <div class="col-6 nopadding projectCard">
-                                            <img src="Images/Cards/opengl2.png" class="projectCardVisual" onclick="onClickProjectCard(2)"></img>
+                                            <img src="Images/Cards/opengl2.png" loading="lazy" class="projectCardVisual" onclick="onClickProjectCard(2)"></img>
                                             <div class="d-flex align-items-center justify-content-center text-center projectCardFooter" onclick="onClickProjectCard(2)">
                                                 <h4 style="margin: 0;">OpenGL rendering</h4>
                                             </div>
@@ -185,47 +199,54 @@
                                                     <div class="col-md-6 text-light projectCardContentLeft">
                                                         <h2 class="">What is this?</h2>
                                                         <p class="">
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                                                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                            During the second year of my education we were taught about 3D math and 3D rendering. Behind the scenes, OpenGL is one of the main API’s where those techniques get utilized for most applications. We used the C++ programming language, which was also new to most of us, so learning that was our first priority. We did so by creating a relatively small 2d fighting game.
+                                                            <br><br>
+                                                            Learning OpenGL itself was not the most challenging part, the thing I learned most was what shaders are, and how to communicate with them. Most of the syntax of OpenGL was already given, or explained in a clear manner. The math and logic we had to do ourself, which was quite challenging. Each week we build upon the knowledge we already had, introducing new techniques along the way, some being lighting, shadows, texture mapping and color manipulation. 
+                                                            <br><br>
+                                                            The final product is a combination of each of these smaller assignments.
                                                         </p>
                                                     </div>
                                                     <div class="col-md-6 projectCardContentRight">
-                                                        <img class="projectCardContentMedia" src="Images/Cards/opengl2.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/opengl2.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/Internal/opengl2.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/Internal/opengl1.png">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div> 
 
                                         <div class="col-6 nopadding projectCard">
-                                            <img src="Images/Cards/spacebound3.png" class="projectCardVisual" onclick="onClickProjectCard(3)"></img>
+                                            <img src="Images/Cards/spacebound3.png" loading="lazy" class="projectCardVisual" onclick="onClickProjectCard(3)"></img>
                                             <div class="d-flex align-items-center justify-content-center text-center projectCardFooter" onclick="onClickProjectCard(3)">
-                                                <h4 style="margin: 0;">Space phone game</h4>
+                                                <h4 style="margin: 0;">Spacebound game</h4>
                                             </div>
                                             <div class="row nopadding d-flex container-fluid projectCardContent">
                                                 <div class="col-12 row nopadding bg-dark d-flex projectCardContentHeader">
                                                     <i class="bi bi-arrow-return-left col d-flex align-items-center justify-content-center contentCardBackButton" onclick="onExitProjectCard()"></i>
-                                                    <h3 class="col-8 d-flex align-items-center justify-content-center text-center text-white projectCardContentHeaderText">Space phone game</h3>
+                                                    <h3 class="col-8 d-flex align-items-center justify-content-center text-center text-white projectCardContentHeaderText">Spacebound game</h3>
                                                     <div class="col"></div>
                                                 </div>
                                                 <div class="col-12 nopadding flex-fill row projectCardContentMain">
                                                     <div class="col-md-6 text-light projectCardContentLeft">
                                                         <h2 class="">What is this?</h2>
                                                         <p class="">
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                                                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                            For one of the group projects of my education we had to create a mobile game. Our group consisted of 6 people, and I was responsible for the engineering together with another student. After discussing and brainstorming together, we decided to make an infinite roguelike shooter game, with a space theme. We decided to use the Unity game engine since that was the one we were most familiar with.
+                                                            <br><br>
+                                                            We split up the main features into 2 parts, the procedural generation and the AI. The other student already had experience with procedural generation, and I really wanted to create the AI. Other features such as the gameplay mechanics were implemented in a collaborate fashion. The visuals were created by the artists of our group, and most design decisions by the designers. 
+                                                            <br><br>
+                                                            The 2 weeks allowed for these kind of projects mostly teaches you about teamwork, planning and collaboration. While I also greatly improved my general programming knowledge, algorithm efficiency and AI decision trees.
                                                         </p>
                                                     </div>
                                                     <div class="col-md-6 projectCardContentRight">
-                                                        <img class="projectCardContentMedia" src="Images/Cards/spacebound3.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/spacebound3.png">
+                                                        <iframe class="projectCardContentMedia" loading="lazy" style="height: 60%;" frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/zmABzFhyhvY"></iframe>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="col-6 nopadding projectCard">
-                                            <img src="Images/Cards/floatsim4.png" class="projectCardVisual" onclick="onClickProjectCard(4)"></img>
+                                            <img src="Images/Cards/floatsim4.png" loading="lazy" class="projectCardVisual" onclick="onClickProjectCard(4)"></img>
                                             <div class="d-flex align-items-center justify-content-center text-center projectCardFooter" onclick="onClickProjectCard(4)">
                                                 <h4 style="margin: 0;">Bouyancy simulator</h4>
                                             </div>
@@ -239,20 +260,23 @@
                                                     <div class="col-md-6 text-light projectCardContentLeft">
                                                         <h2 class="">What is this?</h2>
                                                         <p class="">
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                                                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                            Personal portfolio is a subject where you as a student get to chose what kind of project you want to work on during a term, which is fit for your online presence. I decided to do one about ships and their respective physics, using the Unity game engine.
+                                                            <br><br>
+                                                            The scale of these subjects are quite small, so I soon figured out the I had to scale down my goals a bit. In the end, it became a buoyancy simulation supported by procedurally generated waves, using shaders. A big part of my time invested was into these shaders, since position calculations were determined by the current height of the waves relative to the ship its edges. 
+                                                            <br><br>
+                                                            The physics itself are quite logical and straight to the point, but implementing it into an environment is where the challenge lied. After polishing and some visuals I was satisfied with the simulation.
                                                         </p>
                                                     </div>
                                                     <div class="col-md-6 projectCardContentRight">
-                                                        <img class="projectCardContentMedia" src="Images/Cards/floatsim4.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/floatsim4.png">
+                                                        <iframe class="projectCardContentMedia" loading="lazy" style="height: 60%;" frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/AWx6gldlsoo"></iframe>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="col-6 nopadding projectCard">
-                                            <img src="Images/Cards/robotgladiator5.png" class="projectCardVisual" onclick="onClickProjectCard(5)"></img>
+                                            <img src="Images/Cards/robotgladiator5.png" loading="lazy" class="projectCardVisual" onclick="onClickProjectCard(5)"></img>
                                             <div class="d-flex align-items-center justify-content-center text-center projectCardFooter" onclick="onClickProjectCard(5)">
                                                 <h4 style="margin: 0;">Robotic gladiator</h4>
                                             </div>
@@ -266,20 +290,24 @@
                                                     <div class="col-md-6 text-light projectCardContentLeft">
                                                         <h2 class="">What is this?</h2>
                                                         <p class="">
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                                                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                            The first project on the biggest scale I created during the education. Also the first one we could execute inside of the Unity game engine, before mostly using 2d graphics engines. The conditions were very broad, and allowed for quite some creative freedom. Inspired by fast paced combat games, I decided to make one myself, in a miniature gladiator style. I also did not want to rely on external assets, and created almost everything myself using primitive shapes.
+                                                            <br><br>
+                                                            The core part was player movement, which had to be fluent and easy to control, while also being satisfying to use. At this point we did not have much experience with physics yet, but after some research and tinkering I managed to have something working. The time that was left over was spend on AI, game design and environment creation.
+                                                            <br><br>
+                                                            While I did not necessary learn many new things, this is actually one of the projects I am most proud of. Its an actual complete experience, where I created most of the content myself and is quite enjoyable too.
                                                         </p>
                                                     </div>
                                                     <div class="col-md-6 projectCardContentRight">
-                                                        <img class="projectCardContentMedia" src="Images/Cards/robotgladiator5.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/robotgladiator5.png">
+                                                        <iframe class="projectCardContentMedia" loading="lazy" style="height: 60%;" frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/-_mjgWDhgbo"></iframe>
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/Internal/robotgladiator1.png">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="col-6 nopadding projectCard">
-                                            <img src="Images/Cards/shipgame6.png" class="projectCardVisual" onclick="onClickProjectCard(6)"></img>
+                                            <img src="Images/Cards/shipgame6.png" loading="lazy" class="projectCardVisual" onclick="onClickProjectCard(6)"></img>
                                             <div class="d-flex align-items-center justify-content-center text-center projectCardFooter" onclick="onClickProjectCard(6)">
                                                 <h4 style="margin: 0;">Party pirates game</h4>
                                             </div>
@@ -293,20 +321,23 @@
                                                     <div class="col-md-6 text-light projectCardContentLeft">
                                                         <h2 class="">What is this?</h2>
                                                         <p class="">
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                                                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                            This group project stood out due to the fact that we had to create an online multiplayer game. The term before we engineers were taught about networking, and were now tasked with implementing it into an actual product. I learned that even the simplest games become the biggest challenge if you decide to host it online for multiplayer purposes.
+                                                            <br><br>
+                                                            Even so, I was not even the one in charge for the networking itself. Since we both recognized that networking was going to be taking a big time investment, the other engineer became solely responsible for it. That did not mean I had it any easier however, since I still had to design most of my features around it. 
+                                                            <br><br>
+                                                            The game was once again designed for mobile, so optimalisation was a big priority. That limitation actually costed us a lot of time, due to terrible performance and the engineering to try to fix it. My main contribution was the ship movement and combat. I am especially proud of the shooting mechanic which uses smooth transitions and engaging design.  This was also the first time where I realized how important it is to make your code as readable and clean as possible, since we had to combine our code a lot.
                                                         </p>
                                                     </div>
                                                     <div class="col-md-6 projectCardContentRight">
-                                                        <img class="projectCardContentMedia" src="Images/Cards/shipgame6.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/shipgame6.png">
+                                                        <iframe class="projectCardContentMedia" loading="lazy" style="height: 60%;" frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/DpIFXZATyVo"></iframe>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="col-6 nopadding projectCard">
-                                            <img src="Images/Cards/machinelearning7.png" class="projectCardVisual" onclick="onClickProjectCard(7)"></img>
+                                            <img src="Images/Cards/machinelearning7.png" loading="lazy" class="projectCardVisual" onclick="onClickProjectCard(7)"></img>
                                             <div class="d-flex align-items-center justify-content-center text-center projectCardFooter" onclick="onClickProjectCard(7)">
                                                 <h4 style="margin: 0;">Machine learning</h4>
                                             </div>
@@ -320,20 +351,25 @@
                                                     <div class="col-md-6 text-light projectCardContentLeft">
                                                         <h2 class="">What is this?</h2>
                                                         <p class="">
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                                                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                            Another project I chose for the personal portfolio use case. Machine learning had always been a subject of interest for me, but I never took the chance to work with it. These assignments are outside the scope of complex machine learning, but even scratching the surface taught me a lot.
+                                                            <br><br>
+                                                            I kept the bar quite low, as it was hard to predict the time needed for this, and I did not want to get stuck without clear results. Also, python was a completely new programming language for me, which is the most common one used for machine learning. The subjects I decided to research were supervised machine learning and reinforced machine learning.
+                                                            <br><br>
+                                                            Only supervised machine learning was implemented using python, as reinforced learning works best in an interactive environment, which unity has an easy to use library wrapper for. Even the python one was encapsulated with external tools, which kept the math behind the scenes. The most important part is knowing how the use those tools, and why it works the way it does, including the logic behind it.
+                                                            <br><br>
+                                                            I technically created 2 products, a small variable predictor based on data, and a minigame where a fly learns how to collect apples without crashing.
                                                         </p>
                                                     </div>
                                                     <div class="col-md-6 projectCardContentRight">
-                                                        <img class="projectCardContentMedia" src="Images/Cards/machinelearning7.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/machinelearning7.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/Internal/machinelearning1.png">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="col-6 nopadding projectCard">
-                                            <img src="Images/Cards/vuforia8.png" class="projectCardVisual" onclick="onClickProjectCard(8)"></img>
+                                            <img src="Images/Cards/vuforia8.png" loading="lazy"loading="lazy" class="projectCardVisual" onclick="onClickProjectCard(8)"></img>
                                             <div class="d-flex align-items-center justify-content-center text-center projectCardFooter" onclick="onClickProjectCard(8)">
                                                 <h4 style="margin: 0;">Augmented reality</h4>
                                             </div>
@@ -347,20 +383,18 @@
                                                     <div class="col-md-6 text-light projectCardContentLeft">
                                                         <h2 class="">What is this?</h2>
                                                         <p class="">
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                                                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                            During my internship of my MBO education, I got some experience with augmented reality. The company I worked with required me to enhance their visual experience by augmenting building onto physical places. I utilized the easy to use Vuforia library for this, which can be installed into the Unity game engine. After setting up a system for loading models into the app, I created a basic website supported by a well-designed user interface. Unfortunately, I cannot show many visuals for this project. 
                                                         </p>
                                                     </div>
                                                     <div class="col-md-6 projectCardContentRight">
-                                                        <img class="projectCardContentMedia" src="Images/Cards/vuforia8.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/vuforia8.png">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="col-6 nopadding projectCard">
-                                            <img src="Images/Cards/robotbattle9.png" class="projectCardVisual" onclick="onClickProjectCard(9)"></img>
+                                            <img src="Images/Cards/robotbattle9.png" loading="lazy" class="projectCardVisual" onclick="onClickProjectCard(9)"></img>
                                             <div class="d-flex align-items-center justify-content-center text-center projectCardFooter" onclick="onClickProjectCard(9)">
                                                 <h4 style="margin: 0;">Scrap warriors game</h4>
                                             </div>
@@ -374,20 +408,21 @@
                                                     <div class="col-md-6 text-light projectCardContentLeft">
                                                         <h2 class="">What is this?</h2>
                                                         <p class="">
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                                                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                            In this final group project, the product was to be presented to an actually company and played by many other students. The game had to be playable by multiple people at the same time, using split screen in a competitive environment. Just like the previous projects, teamwork and flexibility was detrimental here. We decided to create a battle arena game, inspired by the tv program “battle bots”. I was in charge of the weapon system, and the creative challenges that come with them. Looking back on it, I did not really learn anything new specifically. Mostly code readability, adaptability and software architecture.
                                                         </p>
                                                     </div>
                                                     <div class="col-md-6 projectCardContentRight">
-                                                        <img class="projectCardContentMedia" src="Images/Cards/robotbattle9.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/robotbattle9.png">
+                                                        <iframe class="projectCardContentMedia" loading="lazy" style="height: 60%;" frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/UHc7mTgCtQI"></iframe>
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/Internal/scrapwarriors1.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/Internal/scrapwarriors2.png">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="col-6 nopadding projectCard">
-                                            <img src="Images/Cards/mboprojects10.png" class="projectCardVisual" onclick="onClickProjectCard(10)"></img>
+                                            <img src="Images/Cards/mboprojects10.png" loading="lazy" class="projectCardVisual" onclick="onClickProjectCard(10)"></img>
                                             <div class="d-flex align-items-center justify-content-center text-center projectCardFooter" onclick="onClickProjectCard(10)">
                                                 <h4 style="margin: 0;">MBO projects</h4>
                                             </div>
@@ -401,20 +436,19 @@
                                                     <div class="col-md-6 text-light projectCardContentLeft">
                                                         <h2 class="">What is this?</h2>
                                                         <p class="">
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                                                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                            The education prior to my current one, was also filled with many projects. However, due to its adequate quality and level, there are not many I am extremely proud to showcase looking back. Many were created using Unity as well, and its where I got my initial programing experience from. But most of them are simply completely overshadowed by other ones, or the techniques used completely replaced. Still, part of journey on how I got here in the first place. 
                                                         </p>
                                                     </div>
                                                     <div class="col-md-6 projectCardContentRight">
-                                                        <img class="projectCardContentMedia" src="Images/Cards/mboprojects10.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/mboprojects10.png">
+                                                        <iframe class="projectCardContentMedia" loading="lazy" style="height: 60%;" frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/OYjORycjiOE"></iframe>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="col-6 nopadding projectCard">
-                                            <img src="Images/Cards/website11.png" class="projectCardVisual" onclick="onClickProjectCard(11)"></img>
+                                            <img src="Images/Cards/website11.png" loading="lazy" class="projectCardVisual" onclick="onClickProjectCard(11)"></img>
                                             <div class="d-flex align-items-center justify-content-center text-center projectCardFooter" onclick="onClickProjectCard(11)">
                                                 <h4 style="margin: 0;">Web development</h4>
                                             </div>
@@ -428,22 +462,21 @@
                                                     <div class="col-md-6 text-light projectCardContentLeft">
                                                         <h2 class="">What is this?</h2>
                                                         <p class="">
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                                                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                            I got a bit of web development knowledge during the past few years, from small  web related projects. Such as the one you are looking at right now, my most ambitious one yet. While most were incomplete prototypes, I gained a good grasp on JavaScript, CSS, HTML and even PHP.
                                                         </p>
                                                     </div>
                                                     <div class="col-md-6 projectCardContentRight">
-                                                        <img class="projectCardContentMedia" src="Images/Cards/website11.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/website11.png">
+                                                        <iframe class="projectCardContentMedia" loading="lazy" style="height: 60%;" frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/TGldcwLmdn0"></iframe>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="col-6 nopadding projectCard">
-                                            <img src="Images/Cards/procgen12.png" class="projectCardVisual" onclick="onClickProjectCard(12)"></img>
+                                            <img src="Images/Cards/procgen12.png" loading="lazy" class="projectCardVisual" onclick="onClickProjectCard(12)"></img>
                                             <div class="d-flex align-items-center justify-content-center text-center projectCardFooter" onclick="onClickProjectCard(12)">
-                                                <h4 style="margin: 0;">WIP procedural generation</h4>
+                                                <h4 style="margin: 0; font-size: 1rem !important;">WIP procedural generation</h4>
                                             </div>
                                             <div class="row nopadding d-flex container-fluid projectCardContent">
                                                 <div class="col-12 row nopadding bg-dark d-flex projectCardContentHeader">
@@ -455,13 +488,11 @@
                                                     <div class="col-md-6 text-light projectCardContentLeft">
                                                         <h2 class="">What is this?</h2>
                                                         <p class="">
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                                                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                            The project I am currently working on, and thus far from finished. My goal is to create a Unity tool for creating procedurally generated cities. The core of the tool is based on roads, that can be dragged and dropped inside the scene, that create procedural meshes on runtime, aligned onto each other. Its very early in production, and that part is not working yet, but when I get around to it, I want to generate building/skyscrapers around the roads, generating the city itself as well.
                                                         </p>
                                                     </div>
                                                     <div class="col-md-6 projectCardContentRight">
-                                                        <img class="projectCardContentMedia" src="Images/Cards/procgen12.png">
+                                                        <img class="projectCardContentMedia" loading="lazy" src="Images/Cards/procgen12.png">
                                                     </div>
                                                 </div>
                                             </div>
@@ -513,7 +544,7 @@
                                         </p>
                                     </div>
                                     <div id="aboutRightInfoDiv" class="col-md-4 nopadding d-flex align-items-center justify-content-center">
-                                        <img src="Images/imageMe.jpeg" id="aboutPicture"></img>
+                                        <img src="Images/imageMe.jpeg" loading="lazy" id="aboutPicture"></img>
                                     </div>
                                 </div>
                             </div>
