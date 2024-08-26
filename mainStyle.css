@@ -380,3 +380,13 @@ body::-webkit-scrollbar {
   from, to { border-color: transparent }
   50% { border-color: white; }
 }
+
+#loadingCover{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  background-color: rgba(33, 37, 41, 1);
+  z-index: 1000000;
+}

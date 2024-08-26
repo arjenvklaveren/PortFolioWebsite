@@ -28,6 +28,8 @@ window.onload = function()
     setInterval(update, 10);
     typeWriterHome();
     scrollToBottom();
+    setContentRocket();
+    document.getElementById("loadingCover").style.display = "none";
 };
 window.onresize = function()
 {
